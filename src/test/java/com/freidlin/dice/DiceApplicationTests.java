@@ -9,5 +9,4 @@ class DiceApplicationTests {
 	@Test
 	void contextLoads() {
 	}
-
 }

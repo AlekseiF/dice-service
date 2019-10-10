@@ -1,34 +1,37 @@
 package com.freidlin.dice.game;
 
-import com.freidlin.dice.model.PlayRequestModel;
-
-import java.util.Random;
-
 public class GameResult
 {
-  private final long _payout;
-  private final long _currentBalance;
-  private final byte _direction;
+  private final double _payout;
+  private final double _currentBalance;
+  private final double _multiplier;
+  private final boolean _rollUnder;
 
-  public GameResult(long payout, long newBalance, byte direction)
+  public GameResult(double payout, double newBalance, double multiplier, boolean rollUnder)
   {
     _payout = payout;
     _currentBalance = newBalance;
-    _direction = direction;
+    _multiplier = multiplier;
+    _rollUnder = rollUnder;
   }
 
-  public long getPayout()
+  public double getPayout()
   {
     return _payout;
   }
 
-  public long getCurrentBalance()
+  public double getCurrentBalance()
   {
     return _currentBalance;
   }
 
-  public byte getDirection()
+  public double getMultiplier()
   {
-    return _direction;
+    return _multiplier;
+  }
+
+  public boolean getDirection()
+  {
+    return _rollUnder;
   }
 }

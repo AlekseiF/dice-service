@@ -1,9 +1,11 @@
 package com.freidlin.dice.model;
 
+import java.math.BigDecimal;
+
 public class PlayerModel
 {
   private static PlayerModel _instance = null;
-  private static long _balance = 0;
+  private static BigDecimal _balance = new BigDecimal(10000);
 
   private PlayerModel()
   {
@@ -18,18 +20,18 @@ public class PlayerModel
     return _instance;
   }
 
-  public long getBalance()
+  public double getBalance()
   {
-    return _balance;
+    return _balance.doubleValue();
   }
 
-  public void deductWager(long wager)
+  public void deductWager(int wager)
   {
-    _balance -= wager;
+    _balance = _balance.subtract(new BigDecimal(wager));
   }
 
-  public void applyPayout(long payout)
+  public void applyPayout(BigDecimal payout)
   {
-    _balance += payout;
+    _balance = _balance.add(payout);
   }
 }
