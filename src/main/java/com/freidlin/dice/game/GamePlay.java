@@ -1,6 +1,6 @@
 package com.freidlin.dice.game;
 
-import com.freidlin.dice.exceptions.InvalidBetException;
+import com.freidlin.dice.exceptions.InsufficientFundsException;
 import com.freidlin.dice.model.PlayRequestModel;
 import com.freidlin.dice.model.PlayerModel;
 
@@ -13,15 +13,22 @@ public class GamePlay
 
   public GameResult play(PlayRequestModel playRequestModel)
   {
-    /*if (_player.getBalance() < playRequestModel.getWager())
+    if (_player.getBalance() < playRequestModel.getWager())
     {
-      throw new InvalidBetException();
-    }*/
+      throw new InsufficientFundsException();
+    }
 
-    Random rng = new Random();
-    float result = rng.nextFloat();
+    _player.deductWager(playRequestModel.getWager());
 
-    _player.setBalance(2);
-    return new GameResult(0, _player.getBalance(), (byte)1, true);
+    long payout = 0;
+    long result = new Random().nextLong();
+
+    if (result < playRequestModel.getWinChance())
+    {
+      payout = playRequestModel.getWager() * playRequestModel.getWinChance();
+      _player.applyPayout(payout);
+    }
+
+    return new GameResult(payout, _player.getBalance(), (byte)1);
   }
 }

@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class PlayController
 {
   @RequestMapping("/play")
-  public GameResult play(@RequestParam(value = "wager") float wager,
-                         @RequestParam(value = "winChance") float winChance,
+  public GameResult play(@RequestParam(value = "wager") long wager,
+                         @RequestParam(value = "winChance") long winChance,
                          @RequestParam(value = "direction") byte direction)
   {
     return new GamePlay().play(new PlayRequestModel(wager, winChance, direction));

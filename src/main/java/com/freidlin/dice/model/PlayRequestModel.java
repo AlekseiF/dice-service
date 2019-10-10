@@ -5,25 +5,23 @@ import javax.validation.constraints.Min;
 
 public class PlayRequestModel
 {
-  private float _wager;
-  private float _winChance;
-
-  @Min(3)
+  private long _wager;
+  private long _winChance;
   private byte _direction;
 
-  public PlayRequestModel(float wager, float winChance, byte direction)
+  public PlayRequestModel(long wager, long winChance, byte direction)
   {
     _wager = wager;
     _winChance = winChance;
     _direction = direction;
   }
 
-  public float getWager()
+  public long getWager()
   {
     return _wager;
   }
 
-  public float getWinChance()
+  public long getWinChance()
   {
     return _winChance;
   }

@@ -23,7 +23,12 @@ public class PlayerModel
     return _balance;
   }
 
-  public void setBalance(long payout)
+  public void deductWager(long wager)
+  {
+    _balance -= wager;
+  }
+
+  public void applyPayout(long payout)
   {
     _balance += payout;
   }
