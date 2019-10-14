@@ -23,7 +23,6 @@ class PlayControllerTest
   @Test
   void testCorrectPlayRequest()
   {
-    _playController._gamePlay = new GamePlay();
     int wager = 2;
     int winChance = 4;
     boolean rollUnder = true;
