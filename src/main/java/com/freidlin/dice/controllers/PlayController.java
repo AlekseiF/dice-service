@@ -5,9 +5,12 @@ import com.freidlin.dice.game.GameResult;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.validation.constraints.Max;
@@ -23,16 +26,16 @@ public class PlayController
   GamePlay _gamePlay = new GamePlay();
 
   @RequestMapping("/play")
-  public GameResult play(@RequestParam
+  public ResponseEntity<GameResult> play(@RequestParam
                          @Min(value = 1, message = "Wager can not be less, than 1")
                          @Max(value = 10000, message = "Wager can not be more, than 10000") int wager,
-                         @RequestParam
+                                         @RequestParam
                          @Min(value = 2, message = "Win chance can not be less, than 2")
                          @Max(value = 98, message = "Win chance can not be more, than 98") int winChance,
-                         @RequestParam(value = "rollUnder") boolean rollUnder)
+                                         @RequestParam(value = "rollUnder") boolean rollUnder)
   {
     logger.info("{} - player wagered: {}, chosen 'winChance': {}%, with 'rollUnder' set to: {}.", Calendar.getInstance().getTime(), wager, winChance, rollUnder);
 
-    return _gamePlay.play(wager, winChance, rollUnder);
+    return new ResponseEntity<GameResult>(_gamePlay.play(wager, winChance, rollUnder), HttpStatus.OK) ;
   }
 }

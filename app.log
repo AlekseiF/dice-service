@@ -1,0 +1,163 @@
+2019-10-14 06:12:43,944 INFO c.f.d.DiceApplicationTests [Test worker] Starting DiceApplicationTests on aleksei-TUF-Gaming-FX505GD with PID 9725 (started by alekseif in /media/alekseif/Storage/dev/projets/idea-projects/dice-service)
+2019-10-14 06:12:43,955 INFO c.f.d.DiceApplicationTests [Test worker] The following profiles are active: test
+2019-10-14 06:12:45,285 INFO o.s.s.c.ThreadPoolTaskExecutor [Test worker] Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-14 06:12:45,581 INFO c.f.d.DiceApplicationTests [Test worker] Started DiceApplicationTests in 2.032 seconds (JVM running for 3.444)
+2019-10-14 06:12:45,968 INFO o.s.s.c.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-14 06:53:06,836 INFO c.f.d.c.PlayControllerTest [Test worker] Starting PlayControllerTest on aleksei-TUF-Gaming-FX505GD with PID 15346 (started by alekseif in /media/alekseif/Storage/dev/projets/idea-projects/dice-service)
+2019-10-14 06:53:06,846 INFO c.f.d.c.PlayControllerTest [Test worker] The following profiles are active: test
+2019-10-14 06:53:08,333 INFO o.s.s.c.ThreadPoolTaskExecutor [Test worker] Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-14 06:53:08,639 INFO c.f.d.c.PlayControllerTest [Test worker] Started PlayControllerTest in 2.157 seconds (JVM running for 3.353)
+2019-10-14 06:53:08,710 INFO o.s.s.c.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-14 06:53:32,305 INFO c.f.d.c.PlayControllerTest [Test worker] Starting PlayControllerTest on aleksei-TUF-Gaming-FX505GD with PID 15503 (started by alekseif in /media/alekseif/Storage/dev/projets/idea-projects/dice-service)
+2019-10-14 06:53:32,315 INFO c.f.d.c.PlayControllerTest [Test worker] The following profiles are active: test
+2019-10-14 06:53:33,826 INFO o.s.s.c.ThreadPoolTaskExecutor [Test worker] Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-14 06:53:34,128 INFO c.f.d.c.PlayControllerTest [Test worker] Started PlayControllerTest in 2.164 seconds (JVM running for 3.387)
+2019-10-14 06:53:34,203 INFO o.s.s.c.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-14 06:59:27,428 INFO c.f.d.c.PlayControllerTest [Test worker] Starting PlayControllerTest on aleksei-TUF-Gaming-FX505GD with PID 16061 (started by alekseif in /media/alekseif/Storage/dev/projets/idea-projects/dice-service)
+2019-10-14 06:59:27,440 INFO c.f.d.c.PlayControllerTest [Test worker] The following profiles are active: test
+2019-10-14 06:59:29,013 INFO o.s.s.c.ThreadPoolTaskExecutor [Test worker] Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-14 06:59:29,326 INFO c.f.d.c.PlayControllerTest [Test worker] Started PlayControllerTest in 2.269 seconds (JVM running for 3.498)
+2019-10-14 06:59:29,399 INFO o.s.s.c.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-14 06:59:58,322 INFO c.f.d.c.PlayControllerTest [Test worker] Starting PlayControllerTest on aleksei-TUF-Gaming-FX505GD with PID 16222 (started by alekseif in /media/alekseif/Storage/dev/projets/idea-projects/dice-service)
+2019-10-14 06:59:58,333 INFO c.f.d.c.PlayControllerTest [Test worker] The following profiles are active: test
+2019-10-14 06:59:59,844 INFO o.s.s.c.ThreadPoolTaskExecutor [Test worker] Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-14 07:00:00,124 INFO c.f.d.c.PlayControllerTest [Test worker] Started PlayControllerTest in 2.155 seconds (JVM running for 3.374)
+2019-10-14 07:00:00,185 INFO o.s.s.c.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-14 07:01:12,574 INFO c.f.d.DiceApp [restartedMain] Starting DiceApp on aleksei-TUF-Gaming-FX505GD with PID 16582 (/media/alekseif/Storage/dev/projets/idea-projects/dice-service/build/classes/java/main started by alekseif in /media/alekseif/Storage/dev/projets/idea-projects/dice-service)
+2019-10-14 07:01:12,582 INFO c.f.d.DiceApp [restartedMain] No active profile set, falling back to default profiles: default
+2019-10-14 07:01:12,616 INFO o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-14 07:01:12,616 INFO o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-14 07:01:13,336 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2019-10-14 07:01:13,351 INFO o.a.c.c.StandardService [restartedMain] Starting service [Tomcat]
+2019-10-14 07:01:13,352 INFO o.a.c.c.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-14 07:01:13,402 INFO o.a.c.c.C.[.[.[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2019-10-14 07:01:13,402 INFO o.s.w.c.ContextLoader [restartedMain] Root WebApplicationContext: initialization completed in 786 ms
+2019-10-14 07:01:13,540 INFO o.s.s.c.ThreadPoolTaskExecutor [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-14 07:01:13,624 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2019-10-14 07:01:13,645 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-14 07:01:13,647 INFO c.f.d.DiceApp [restartedMain] Started DiceApp in 1.405 seconds (JVM running for 1.891)
+2019-10-14 07:01:20,083 INFO o.a.c.c.C.[.[.[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-14 07:01:20,083 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2019-10-14 07:01:20,087 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 4 ms
+2019-10-14 07:01:23,729 INFO c.f.d.c.PlayController [http-nio-8080-exec-2] 2019-10-14T07:01:23.728+0300 - player wagered: 1, chosen 'winChance': 45%, with 'rollUnder' set to: true.
+2019-10-14 07:01:23,733 INFO c.f.d.g.GamePlay [http-nio-8080-exec-2] 2019-10-14T07:01:23.733+0300 - player 'payout': 0, current balance: 9999.0, with calculated 'multiplier': 2.20000000000000017763568394002504646778106689453125.
+2019-10-14 07:01:27,077 INFO c.f.d.c.PlayController [http-nio-8080-exec-4] 2019-10-14T07:01:27.076+0300 - player wagered: 1, chosen 'winChance': 45%, with 'rollUnder' set to: true.
+2019-10-14 07:01:27,080 INFO c.f.d.g.GamePlay [http-nio-8080-exec-4] 2019-10-14T07:01:27.079+0300 - player 'payout': 2.20000000000000017763568394002504646778106689453125, current balance: 10000.2, with calculated 'multiplier': 2.20000000000000017763568394002504646778106689453125.
+2019-10-14 07:01:27,893 INFO c.f.d.c.PlayController [http-nio-8080-exec-5] 2019-10-14T07:01:27.893+0300 - player wagered: 1, chosen 'winChance': 45%, with 'rollUnder' set to: true.
+2019-10-14 07:01:27,896 INFO c.f.d.g.GamePlay [http-nio-8080-exec-5] 2019-10-14T07:01:27.895+0300 - player 'payout': 0, current balance: 9999.2, with calculated 'multiplier': 2.20000000000000017763568394002504646778106689453125.
+2019-10-14 07:01:28,654 INFO c.f.d.c.PlayController [http-nio-8080-exec-6] 2019-10-14T07:01:28.654+0300 - player wagered: 1, chosen 'winChance': 45%, with 'rollUnder' set to: true.
+2019-10-14 07:01:28,656 INFO c.f.d.g.GamePlay [http-nio-8080-exec-6] 2019-10-14T07:01:28.656+0300 - player 'payout': 2.20000000000000017763568394002504646778106689453125, current balance: 10000.4, with calculated 'multiplier': 2.20000000000000017763568394002504646778106689453125.
+2019-10-14 07:01:29,195 INFO c.f.d.c.PlayController [http-nio-8080-exec-7] 2019-10-14T07:01:29.195+0300 - player wagered: 1, chosen 'winChance': 45%, with 'rollUnder' set to: true.
+2019-10-14 07:01:29,198 INFO c.f.d.g.GamePlay [http-nio-8080-exec-7] 2019-10-14T07:01:29.197+0300 - player 'payout': 0, current balance: 9999.4, with calculated 'multiplier': 2.20000000000000017763568394002504646778106689453125.
+2019-10-14 07:01:29,674 INFO c.f.d.c.PlayController [http-nio-8080-exec-8] 2019-10-14T07:01:29.673+0300 - player wagered: 1, chosen 'winChance': 45%, with 'rollUnder' set to: true.
+2019-10-14 07:01:29,677 INFO c.f.d.g.GamePlay [http-nio-8080-exec-8] 2019-10-14T07:01:29.676+0300 - player 'payout': 0, current balance: 9998.4, with calculated 'multiplier': 2.20000000000000017763568394002504646778106689453125.
+2019-10-14 07:01:30,099 INFO c.f.d.c.PlayController [http-nio-8080-exec-9] 2019-10-14T07:01:30.099+0300 - player wagered: 1, chosen 'winChance': 45%, with 'rollUnder' set to: true.
+2019-10-14 07:01:30,101 INFO c.f.d.g.GamePlay [http-nio-8080-exec-9] 2019-10-14T07:01:30.101+0300 - player 'payout': 0, current balance: 9997.4, with calculated 'multiplier': 2.20000000000000017763568394002504646778106689453125.
+2019-10-14 07:01:55,952 INFO c.f.d.c.PlayControllerTest [Test worker] Starting PlayControllerTest on aleksei-TUF-Gaming-FX505GD with PID 16845 (started by alekseif in /media/alekseif/Storage/dev/projets/idea-projects/dice-service)
+2019-10-14 07:01:55,962 INFO c.f.d.c.PlayControllerTest [Test worker] The following profiles are active: test
+2019-10-14 07:01:57,601 INFO o.s.s.c.ThreadPoolTaskExecutor [Test worker] Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-14 07:01:57,911 INFO c.f.d.c.PlayControllerTest [Test worker] Started PlayControllerTest in 2.372 seconds (JVM running for 3.949)
+2019-10-14 07:02:57,776 INFO c.f.d.c.PlayControllerTest [Test worker] Starting PlayControllerTest on aleksei-TUF-Gaming-FX505GD with PID 17026 (started by alekseif in /media/alekseif/Storage/dev/projets/idea-projects/dice-service)
+2019-10-14 07:02:57,787 INFO c.f.d.c.PlayControllerTest [Test worker] The following profiles are active: test
+2019-10-14 07:02:58,958 INFO o.s.s.c.ThreadPoolTaskExecutor [Test worker] Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-14 07:02:59,265 INFO c.f.d.c.PlayControllerTest [Test worker] Started PlayControllerTest in 1.847 seconds (JVM running for 3.108)
+2019-10-14 07:02:59,692 INFO c.f.d.c.PlayController [Test worker] 2019-10-14T07:02:59.691+0300 - player wagered: 2, chosen 'winChance': 4%, with 'rollUnder' set to: true.
+2019-10-14 07:02:59,696 INFO c.f.d.g.GamePlay [Test worker] 2019-10-14T07:02:59.696+0300 - player 'payout': 0, current balance: 9998.0, with calculated 'multiplier': 24.75.
+2019-10-14 07:02:59,732 INFO o.s.s.c.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-14 07:03:31,021 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] [http-nio-8080-exec-3] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is javax.validation.ConstraintViolationException: play.wager: Wager can not be less, than 1] with root cause
+javax.validation.ConstraintViolationException: play.wager: Wager can not be less, than 1
+	at org.springframework.validation.beanvalidation.MethodValidationInterceptor.invoke(MethodValidationInterceptor.java:117) ~[spring-context-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747) ~[spring-aop-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689) ~[spring-aop-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at com.freidlin.dice.controllers.PlayController$$EnhancerBySpringCGLIB$$ac5f038b.play(<generated>) ~[main/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) ~[tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.26.jar:9.0.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+2019-10-14 07:05:58,912 INFO c.f.d.c.PlayControllerTest [Test worker] Starting PlayControllerTest on aleksei-TUF-Gaming-FX505GD with PID 17536 (started by alekseif in /media/alekseif/Storage/dev/projets/idea-projects/dice-service)
+2019-10-14 07:05:58,925 INFO c.f.d.c.PlayControllerTest [Test worker] The following profiles are active: test
+2019-10-14 07:06:00,071 INFO o.s.s.c.ThreadPoolTaskExecutor [Test worker] Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-14 07:06:00,364 INFO c.f.d.c.PlayControllerTest [Test worker] Started PlayControllerTest in 1.843 seconds (JVM running for 3.078)
+2019-10-14 07:06:00,800 INFO c.f.d.c.PlayController [Test worker] 2019-10-14T07:06:00.798+0300 - player wagered: 2, chosen 'winChance': 4%, with 'rollUnder' set to: true.
+2019-10-14 07:06:00,805 INFO c.f.d.g.GamePlay [Test worker] 2019-10-14T07:06:00.805+0300 - player 'payout': 0, current balance: 9998.0, with calculated 'multiplier': 24.75.
+2019-10-14 07:06:00,839 INFO o.s.s.c.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-14 07:07:11,536 INFO c.f.d.c.PlayControllerTest [Test worker] Starting PlayControllerTest on aleksei-TUF-Gaming-FX505GD with PID 17939 (started by alekseif in /media/alekseif/Storage/dev/projets/idea-projects/dice-service)
+2019-10-14 07:07:11,548 INFO c.f.d.c.PlayControllerTest [Test worker] The following profiles are active: test
+2019-10-14 07:07:13,059 INFO o.s.s.c.ThreadPoolTaskExecutor [Test worker] Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-14 07:07:13,368 INFO c.f.d.c.PlayControllerTest [Test worker] Started PlayControllerTest in 2.185 seconds (JVM running for 3.415)
+2019-10-14 07:07:13,441 INFO o.s.s.c.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-14 07:07:37,313 INFO c.f.d.c.PlayControllerTest [Test worker] Starting PlayControllerTest on aleksei-TUF-Gaming-FX505GD with PID 18106 (started by alekseif in /media/alekseif/Storage/dev/projets/idea-projects/dice-service)
+2019-10-14 07:07:37,325 INFO c.f.d.c.PlayControllerTest [Test worker] The following profiles are active: test
+2019-10-14 07:07:39,030 INFO o.s.s.c.ThreadPoolTaskExecutor [Test worker] Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-14 07:07:39,368 INFO c.f.d.c.PlayControllerTest [Test worker] Started PlayControllerTest in 2.448 seconds (JVM running for 3.894)
+2019-10-14 07:08:26,470 INFO c.f.d.c.PlayControllerTest [Test worker] Starting PlayControllerTest on aleksei-TUF-Gaming-FX505GD with PID 18223 (started by alekseif in /media/alekseif/Storage/dev/projets/idea-projects/dice-service)
+2019-10-14 07:08:26,481 INFO c.f.d.c.PlayControllerTest [Test worker] The following profiles are active: test
+2019-10-14 07:08:28,161 INFO o.s.s.c.ThreadPoolTaskExecutor [Test worker] Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-14 07:08:28,496 INFO c.f.d.c.PlayControllerTest [Test worker] Started PlayControllerTest in 2.412 seconds (JVM running for 3.838)
+2019-10-14 07:08:36,163 INFO o.s.s.c.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-14 07:08:50,584 INFO c.f.d.c.PlayControllerTest [Test worker] Starting PlayControllerTest on aleksei-TUF-Gaming-FX505GD with PID 18356 (started by alekseif in /media/alekseif/Storage/dev/projets/idea-projects/dice-service)
+2019-10-14 07:08:50,594 INFO c.f.d.c.PlayControllerTest [Test worker] The following profiles are active: test
+2019-10-14 07:08:51,857 INFO o.s.s.c.ThreadPoolTaskExecutor [Test worker] Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-14 07:08:52,186 INFO c.f.d.c.PlayControllerTest [Test worker] Started PlayControllerTest in 1.986 seconds (JVM running for 3.368)
+2019-10-14 07:08:52,639 INFO c.f.d.c.PlayController [Test worker] 2019-10-14T07:08:52.637+0300 - player wagered: 2, chosen 'winChance': 4%, with 'rollUnder' set to: true.
+2019-10-14 07:08:52,646 INFO c.f.d.g.GamePlay [Test worker] 2019-10-14T07:08:52.646+0300 - player 'payout': 0, current balance: 9998.0, with calculated 'multiplier': 24.75.
+2019-10-14 07:08:52,686 INFO o.s.s.c.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-14 07:11:00,471 INFO c.f.d.c.PlayControllerTest [Test worker] Starting PlayControllerTest on aleksei-TUF-Gaming-FX505GD with PID 18598 (started by alekseif in /media/alekseif/Storage/dev/projets/idea-projects/dice-service)
+2019-10-14 07:11:00,483 INFO c.f.d.c.PlayControllerTest [Test worker] The following profiles are active: test
+2019-10-14 07:11:01,619 INFO o.s.s.c.ThreadPoolTaskExecutor [Test worker] Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-14 07:11:01,895 INFO c.f.d.c.PlayControllerTest [Test worker] Started PlayControllerTest in 1.778 seconds (JVM running for 2.986)
+2019-10-14 07:11:02,329 INFO c.f.d.c.PlayController [Test worker] 2019-10-14T07:11:02.327+0300 - player wagered: 2, chosen 'winChance': 4%, with 'rollUnder' set to: true.
+2019-10-14 07:11:02,335 INFO c.f.d.g.GamePlay [Test worker] 2019-10-14T07:11:02.335+0300 - player 'payout': 0, current balance: 9998.0, with calculated 'multiplier': 24.75.
+2019-10-14 07:11:02,380 INFO o.s.s.c.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-14 07:14:13,980 INFO c.f.d.c.PlayControllerTest [Test worker] Starting PlayControllerTest on aleksei-TUF-Gaming-FX505GD with PID 3397 (started by alekseif in /media/alekseif/Storage/dev/projets/idea-projects/dice-service)
+2019-10-14 07:14:13,991 INFO c.f.d.c.PlayControllerTest [Test worker] The following profiles are active: test
+2019-10-14 07:14:15,230 INFO o.s.s.c.ThreadPoolTaskExecutor [Test worker] Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-14 07:14:15,524 INFO c.f.d.c.PlayControllerTest [Test worker] Started PlayControllerTest in 1.937 seconds (JVM running for 3.242)
+2019-10-14 07:14:16,070 INFO o.s.s.c.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
