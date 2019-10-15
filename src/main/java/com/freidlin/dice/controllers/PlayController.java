@@ -1,17 +1,13 @@
 package com.freidlin.dice.controllers;
 
-import com.freidlin.dice.game.GamePlay;
-import com.freidlin.dice.game.GameResult;
+import com.freidlin.dice.services.GamePlayService;
+import com.freidlin.dice.model.GameResult;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
@@ -23,19 +19,19 @@ public class PlayController
 {
   private static final Logger logger = LoggerFactory.getLogger(PlayController.class);
 
-  GamePlay _gamePlay = new GamePlay();
+  @Autowired
+  GamePlayService _gamePlayService;
 
-  @RequestMapping("/play")
-  public ResponseEntity<GameResult> play(@RequestParam
-                         @Min(value = 1, message = "Wager can not be less, than 1")
-                         @Max(value = 10000, message = "Wager can not be more, than 10000") int wager,
-                                         @RequestParam
-                         @Min(value = 2, message = "Win chance can not be less, than 2")
-                         @Max(value = 98, message = "Win chance can not be more, than 98") int winChance,
-                                         @RequestParam(value = "rollUnder") boolean rollUnder)
+  @GetMapping("/play")
+  public GameResult play(@RequestParam(name = "wager")
+                           @Min(1) @Max(1000) int wager,
+                         @RequestParam(name="winChance")
+                           @Min(2) @Max(98) int winChance,
+                         @RequestParam(name="rollUnder") boolean rollUnder)
   {
-    logger.info("{} - player wagered: {}, chosen 'winChance': {}%, with 'rollUnder' set to: {}.", Calendar.getInstance().getTime(), wager, winChance, rollUnder);
+    logger.info("{} - player wagered: {}, chosen 'winChance': {}%, with 'rollUnder' set to: {}.",
+      Calendar.getInstance().getTime(), wager, winChance, rollUnder);
 
-    return new ResponseEntity<GameResult>(_gamePlay.play(wager, winChance, rollUnder), HttpStatus.OK) ;
+    return _gamePlayService.play(wager, winChance, rollUnder);
   }
 }

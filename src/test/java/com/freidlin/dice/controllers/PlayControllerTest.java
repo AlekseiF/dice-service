@@ -1,57 +1,170 @@
 package com.freidlin.dice.controllers;
 
-import com.freidlin.dice.game.GamePlay;
-import com.freidlin.dice.game.GameResult;
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
-import static org.junit.Assert.*;
-import static org.hamcrest.CoreMatchers.is;
-
+import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.mock.mockito.MockBean;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.util.LinkedMultiValueMap;
+import org.springframework.web.util.NestedServletException;
 
 @SpringBootTest
+@AutoConfigureMockMvc
 class PlayControllerTest
 {
+  @Autowired
+  private MockMvc _mockMvc;
+
   @Autowired
   private PlayController _playController;
 
   @Test
-  void testCorrectPlayRequest()
-  {
-    int wager = 2;
-    int winChance = 4;
-    boolean rollUnder = true;
-    ResponseEntity<GameResult> result = _playController.play(wager, winChance, rollUnder);
-
-    assertThat(result.getStatusCode(), is(HttpStatus.OK));
+  public void contexLoads() throws Exception {
+    assertThat(_playController).isNotNull();
   }
 
-  /*@Test
-  void testIncorretWagerPlayRequest()
+  @Test
+  void testValidInputCorrectStatusReturned() throws Exception
   {
-    _playController._gamePlay = new GamePlay();
-    int wager = 0;
-    int winChance = 4;
-    boolean rollUnder = true;
-    ResponseEntity<GameResult> result = _playController.play(wager, winChance, rollUnder);
+    LinkedMultiValueMap<String, String> inputParams = new LinkedMultiValueMap<>();
 
-    assertThat(result.getStatusCode(), is(HttpStatus.INTERNAL_SERVER_ERROR));
-  }*/
+    inputParams.add("wager", "1");
+    inputParams.add("winChance", "45");
+    inputParams.add("rollUnder", "true");
 
-  /*@Test
-  void testIncorretWinChancePlayRequest()
+    _mockMvc.perform(get("/play").
+      contentType("application/json").
+      params(inputParams)
+    ).andExpect(status().isOk());
+  }
+
+  @Test
+  void testInvalidRequestMethod() throws Exception
   {
-    _playController._gamePlay = new GamePlay();
-    int wager = 2;
-    int winChance = 99;
-    boolean rollUnder = true;
-    ResponseEntity<GameResult> result = _playController.play(wager, winChance, rollUnder);
+    LinkedMultiValueMap<String, String> inputParams = new LinkedMultiValueMap<>();
 
-    assertThat(result.getStatusCode(), is(HttpStatus.INTERNAL_SERVER_ERROR));
-  }*/
+    inputParams.add("wager", "1");
+    inputParams.add("winChance", "45");
+    inputParams.add("rollUnder", "true");
+
+    _mockMvc.perform(post("/play").
+      contentType("application/json").
+      params(inputParams)
+    ).andExpect(status().isMethodNotAllowed());
+  }
+
+  @Test
+  void testInvalidWagerIsNull() throws Exception
+  {
+    LinkedMultiValueMap<String, String> inputParams = new LinkedMultiValueMap<>();
+
+    inputParams.add("wager", null);
+    inputParams.add("winChance", "45");
+    inputParams.add("rollUnder", "true");
+
+    _mockMvc.perform(get("/play").
+      contentType("application/json").
+      params(inputParams)
+    ).andExpect(status().isBadRequest());
+  }
+
+  @Test
+  void testInvalidWagerIsLessThanMin() throws Exception
+  {
+    LinkedMultiValueMap<String, String> inputParams = new LinkedMultiValueMap<>();
+
+    inputParams.add("wager", "0");
+    inputParams.add("winChance", "45");
+    inputParams.add("rollUnder", "true");
+    assertThrows(NestedServletException.class, () -> {
+      _mockMvc.perform(get("/play").
+        contentType("application/json").
+        params(inputParams)
+      );
+    });
+  }
+
+  @Test
+  void testInvalidWagerIsOverThanMax() throws Exception
+  {
+    LinkedMultiValueMap<String, String> inputParams = new LinkedMultiValueMap<>();
+
+    inputParams.add("wager", "0");
+    inputParams.add("winChance", "1001");
+    inputParams.add("rollUnder", "true");
+    assertThrows(NestedServletException.class, () -> {
+      _mockMvc.perform(get("/play").
+        contentType("application/json").
+        params(inputParams)
+      );
+    });
+  }
+
+  @Test
+  void testInvalidWinChanceIsNull() throws Exception
+  {
+    LinkedMultiValueMap<String, String> inputParams = new LinkedMultiValueMap<>();
+
+    inputParams.add("wager", "2");
+    inputParams.add("winChance", null);
+    inputParams.add("rollUnder", "true");
+
+    _mockMvc.perform(get("/play").
+      contentType("application/json").
+      params(inputParams)
+    ).andExpect(status().isBadRequest());
+  }
+
+  @Test
+  void testInvalidWinChanceIsLessThanMin() throws Exception
+  {
+    LinkedMultiValueMap<String, String> inputParams = new LinkedMultiValueMap<>();
+
+    inputParams.add("wager", "1");
+    inputParams.add("winChance", "1");
+    inputParams.add("rollUnder", "true");
+    assertThrows(NestedServletException.class, () -> {
+      _mockMvc.perform(get("/play").
+        contentType("application/json").
+        params(inputParams)
+      );
+    });
+  }
+
+  @Test
+  void testInvalidWinChanceIsOverThanMax() throws Exception
+  {
+    LinkedMultiValueMap<String, String> inputParams = new LinkedMultiValueMap<>();
+
+    inputParams.add("wager", "1");
+    inputParams.add("winChance", "99");
+    inputParams.add("rollUnder", "true");
+    assertThrows(NestedServletException.class, () -> {
+      _mockMvc.perform(get("/play").
+        contentType("application/json").
+        params(inputParams)
+      );
+    });
+  }
+
+  @Test
+  void testInvalidRollUnderIsNull() throws Exception
+  {
+    LinkedMultiValueMap<String, String> inputParams = new LinkedMultiValueMap<>();
+
+    inputParams.add("wager", "2");
+    inputParams.add("winChance", "45");
+    inputParams.add("rollUnder", null);
+
+    _mockMvc.perform(get("/play").
+      contentType("application/json").
+      params(inputParams)
+    ).andExpect(status().isBadRequest());
+  }
 }

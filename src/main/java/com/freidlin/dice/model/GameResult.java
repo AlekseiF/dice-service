@@ -1,4 +1,4 @@
-package com.freidlin.dice.game;
+package com.freidlin.dice.model;
 
 public class GameResult
 {
@@ -30,7 +30,7 @@ public class GameResult
     return _multiplier;
   }
 
-  public boolean getDirection()
+  public boolean getRollUnder()
   {
     return _rollUnder;
   }
